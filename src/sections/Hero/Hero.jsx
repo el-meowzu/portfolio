@@ -1,5 +1,5 @@
 import styles from './HeroStyles.module.css';
-import heroImg from '../../assets/hero-meowzu.webp';
+import heroImg from '../../assets/hero-meowzu.png';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg';
 import linkedinLight from '../../assets/linkedin-light.svg';
@@ -43,7 +43,7 @@ function Hero() {
                 </span>
                 <p>Building creative solutions, one line of code at a time.</p>
                 <a href={CV} target='_blank'>
-                    <button className='hover'>
+                    <button className={styles.button}>
                         Resume
                     </button>
                 </a>

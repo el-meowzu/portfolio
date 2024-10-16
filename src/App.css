@@ -22,7 +22,7 @@ body {
     background-color: var(--background-color);
     display: flex;
     justify-content: center;
-    margin : 0 auto 60px;
+    margin-top: 3rem;
 }
 
 #root {
@@ -52,6 +52,7 @@ h2, h3 {
 h1{
     font-family: 'Josefin', sans-serif;
     font-size: 32px;
+    text-align: center;
 }
 
 p {

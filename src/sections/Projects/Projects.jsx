@@ -14,7 +14,7 @@ function Projects() {
                 src={oneLogo} 
                 link="https://el-meowzu.github.io/One_Esport/" 
                 h3="One E-Sport"
-                p="Landing Page for a virtual E-Sport team made with Tailwind Css"
+                p="Tailwind Css landing page"
             />
 
             <ProjectCard 
@@ -23,12 +23,12 @@ function Projects() {
                 h3="Animation Slider"
                 p="Animation Slider made with Html & Css "
             />
-
-            <video autoPlay loop>
-                <source src={underConstruction}  />
-            </video>
-            <h3>Project Under Construction: Working on a project using PERN stack</h3>
-
+            <ProjectCard 
+                src={underConstruction}
+                h3="Project Under Construction"
+                p="Working on a project using PERN stack"
+                isVideo={true}
+            />
         </div>        
     </section>
   )

@@ -1,4 +1,3 @@
-import React from "react";
 import styles from './ProjectsStyles.module.css';
 import underConstruction from "../../assets/underConstruction.mp4"
 import oneLogo from "../../assets/one_logo.webp"

@@ -41,7 +41,7 @@ function Hero() {
                         <img src={githubIcon} alt="github logo" />
                     </a>
                 </span>
-                <p>Building creative solutions, one line of code at a time.</p>
+                <h2>Building creative solutions, one line of code at a time.</h2>
                 <a href={CV} target='_blank'>
                     <button className={styles.button}>
                         Resume

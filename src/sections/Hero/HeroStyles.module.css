@@ -2,24 +2,40 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
   text-align: center;
   height: 100dvh;
   min-height: 500px;
+  gap: 20px;
+}
+
+.colorModeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .hero {
   max-width: 200px;
+  width: 100%; 
+  border-radius: 50%;
+}
+
+.colorMode {
+  position: absolute;
+  top: 50%; 
+  transform: translate(50%, -50%); 
+  right: 0; 
+  width: 12%; 
+  max-width: 30px;
+  cursor: pointer;
 }
 
 span {
   display: flex;
   gap: 25px;
   justify-content: center;
-}
-
-span a {
-  margin: 0;
 }
 
 span a img {
@@ -53,46 +69,21 @@ button:active {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-.colorModeContainer {
-  position: relative;
-}
-
-.colorMode {
-  position: absolute;
-  right: 0;
-  width: 25px;
-}
-
-.colorMode:hover {
-  cursor: pointer;
-}
-
-.description {
-  max-width: 24ch;
-}
-
 .info {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
 }
 
 @media (min-width: 800px) {
-  .container {
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-
   .hero {
     max-width: 350px;
-    width: 350px;
   }
 }
 
 @media (min-width: 1400px) {
   .hero {
     max-width: 400px;
-    width: 400px;
   }
 }

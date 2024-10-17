@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+}
+
+.container .img {
+ 
+}
+
+.container a {
+    width: fit container;
+    text-decoration: none;
+    color: #222;
+    transition: transform 200ms ease-in-out;
+}
+
+a:hover {
+    transform: scale(1.05);
+}
+
+.container .projectsContainer {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+}

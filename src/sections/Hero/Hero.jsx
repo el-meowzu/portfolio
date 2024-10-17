@@ -33,6 +33,7 @@ function Hero() {
             <div className={styles.info}>
                 <h1>Muazu <br/> Suzuki </h1>
                 <h2>Junior Full stack Web Developer </h2>
+                <h2>Future Python AI Developer</h2>
                 <span>
                     <a href="https://linkedin.com/in/muazu-suzuki" target='_blank'>
                         <img src={linkedinIcon} alt="linkedin logo" />
@@ -41,7 +42,7 @@ function Hero() {
                         <img src={githubIcon} alt="github logo" />
                     </a>
                 </span>
-                <h2>Building creative solutions, one line of code at a time.</h2>
+                <h2>Building solutions, one line of code at a time.</h2>
                 <a href={CV} target='_blank'>
                     <button className={styles.button}>
                         Resume

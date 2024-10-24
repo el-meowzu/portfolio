@@ -1,16 +1,16 @@
-import styles from './HeroStyles.module.css';
-import heroImg from '../../assets/hero-meowzu.png';
-import sun from '../../assets/sun.svg';
-import moon from '../../assets/moon.svg';
 import linkedinLight from '../../assets/linkedin-light.svg';
 import linkedinDark from '../../assets/linkedin-dark.svg';
 import githubLight from '../../assets/github-light.svg';
 import githubDark from '../../assets/github-dark.svg';
 import CV from '../../assets/myCv_Eng_ON.pdf';
 import { useTheme } from '../../common/ThemeContext';
+import styles from './HeroStyles.module.css';
+import heroImg from '../../assets/hero-meowzu.png';
+import sun from '../../assets/sun.svg';
+import moon from '../../assets/moon.svg';
 
 function Hero() {
-    const {theme, toggleTheme } = useTheme();
+    const { theme, toggleTheme } = useTheme();
     const themeIcon = theme === 'light' ? sun : moon;
     const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
     const githubIcon = theme === 'light' ? githubLight : githubDark;
@@ -24,7 +24,7 @@ function Hero() {
                     alt="Profile Picture of Muazu" 
                 />
                 <img
-                    className= {styles.colorMode}
+                    className={styles.colorMode}
                     src={themeIcon} 
                     alt="Theme mode icon"
                     onClick={toggleTheme} 
@@ -53,4 +53,4 @@ function Hero() {
     );
 }
 
-export default Hero
+export default Hero;

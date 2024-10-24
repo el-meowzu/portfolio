@@ -1,19 +1,8 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100dvh;
-  min-height: 500px;
-  gap: 20px;
-}
-
 .colorModeContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  gap: 10px; /* Add space between hero image and theme icon */
 }
 
 .hero {
@@ -23,62 +12,19 @@
 }
 
 .colorMode {
-  position: absolute;
-  top: 50%; 
-  transform: translate(50%, -50%); 
-  right: 0; 
-  width: 12%; 
-  max-width: 30px;
+  width: 40px; /* Adjust size of the theme icon */
+  height: auto;
   cursor: pointer;
 }
 
-span {
-  display: flex;
-  gap: 25px;
-  justify-content: center;
-}
-
-span a img {
-  width: 30px;
-}
-
-a {
-  width: fit-content;
-  align-self: center;
-}
-
-button {
-  background-color: var(--btn-color);
-  color: var(--btn-text-color);
-  border: none;
-  border-radius: 20px;
-  width: 126px;
-  height: 50px;
-  font-size: 20px;
-  font-weight: bold;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
-}
-
-button:hover {
-  transform: scale(1.05);
-}
-
-button:active {
-  transform: translateY(2px);
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
-}
-
-.info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
+/* Larger screens */
 @media (min-width: 800px) {
   .hero {
     max-width: 350px;
+  }
+
+  .colorMode {
+    width: 50px; /* Increase size of the theme icon for larger screens */
   }
 }
 
@@ -86,4 +32,15 @@ button:active {
   .hero {
     max-width: 400px;
   }
+
+  .colorMode {
+    width: 60px;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }

@@ -28,7 +28,7 @@ function Projects() {
                 src={weatherApp}
                 link="https://weather-app-five-eta-34.vercel.app/"
                 h3="Weather App"
-                p="Weather App made using Open Weather Map API "
+                p=" This App Uses Open Weather Map API "
                 
             />
             <ProjectCard 

@@ -1,0 +1,153 @@
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  background-color: rgba(150, 131, 236, 0.4);
+  padding: 1rem 2rem;
+  
+}
+
+.navContainer img {
+  width: 2rem;
+  height: auto;
+  cursor: pointer;
+}
+
+.navContent {
+  display: flex;
+}
+
+
+
+.navContent a {
+  text-decoration: none;
+  color: white;
+  font-family: "Alata";
+  font-size: 1.5rem;
+  padding: 0 1rem;
+}
+
+.navLogo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+/* Burger Menu Icon */
+.burgerIcon {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+
+/* Light Theme */
+[data-theme='light'] .hamburgerTop,
+[data-theme='light'] .hamburgerMiddle,
+[data-theme='light'] .hamburgerBottom {
+    background: black; 
+}
+
+/* Dark Theme */
+[data-theme='dark'] .hamburgerTop,
+[data-theme='dark'] .hamburgerMiddle,
+[data-theme='dark'] .hamburgerBottom {
+    background: white; 
+}
+
+
+.hamburgerTop,
+.hamburgerMiddle,
+.hamburgerBottom {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  transition: all 0.4s ease;
+}
+
+.hamburgerTop {
+  top: 6px;
+}
+.hamburgerMiddle {
+  top: 12px;
+}
+.hamburgerBottom {
+  top: 18px;
+}
+
+.closeIcon {
+  font-size: 1.5rem;
+  color: white;
+  position: absolute;
+  top: 1.5em;
+  right: 1.5rem;
+  margin: 0 2.5rem;
+  transform: translate(0, 40%);
+  cursor: pointer;
+  display:none;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .burgerIcon {
+    display: block; 
+  }
+
+    [data-theme='light'] .navContent {
+        background-color: rgba(255, 255, 255, 0.8); 
+    }
+    [data-theme='dark'] .navContent {
+        background-color: rgba(0, 0, 0, 0.8); 
+    }
+
+    [data-theme='light'] .navContent a {
+        color: black; 
+    }
+    [data-theme='dark'] .navContent a {
+        color: white; 
+    }
+
+  .closeIcon {
+    display:block;
+  }
+
+    [data-theme='light'] .closeIcon {
+        color: black; 
+    }
+    [data-theme='dark'] .closeIcon {
+        color: white;  
+    }
+
+
+  .navContainer {
+    justify-content: space-between;
+  }
+
+  .navContent {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .showMenu {
+    display: flex;
+  }
+
+  .navContent a,
+  .navLogo {
+    color: white;
+    font-size: 2rem;
+    padding: 1rem 0;
+  }
+}

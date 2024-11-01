@@ -1,30 +1,39 @@
-.colorModeContainer {
+.heroContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px; /* Add space between hero image and theme icon */
+  gap: 1rem;
+  flex-direction: column; 
+ 
 }
 
 .hero {
-  max-width: 200px;
-  width: 100%; 
-  border-radius: 50%;
+  height:25rem;
+  width: 100%;
+
 }
 
-.colorMode {
-  width: 40px; /* Adjust size of the theme icon */
-  height: auto;
-  cursor: pointer;
+/* Info section */
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
+
 
 /* Larger screens */
 @media (min-width: 800px) {
+  .heroContainer {
+    flex-direction: row; 
+  }
+  
   .hero {
     max-width: 350px;
   }
 
   .colorMode {
-    width: 50px; /* Increase size of the theme icon for larger screens */
+    width: 50px;
   }
 }
 
@@ -38,9 +47,3 @@
   }
 }
 
-.info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}

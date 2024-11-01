@@ -4,7 +4,7 @@ function ProjectCard({ src, link, h3, p, isVideo }) {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer">
       {isVideo ? (
-        <video className="hover" autoPlay loop muted>
+        <video className="hover" loop muted>
           <source src={src} />
           Your browser does not support the video tag.
         </video>

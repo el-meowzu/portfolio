@@ -29,7 +29,7 @@ body {
 #root {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 80px;
     padding: 0 20px; /* Added padding for responsiveness */
 }
 
@@ -163,7 +163,7 @@ button:active {
 
 @media (min-width: 1400px) {
     #root {
-        gap: 200px;
+        gap: 100px;
     }
 
     h1 {

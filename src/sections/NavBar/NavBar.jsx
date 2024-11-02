@@ -7,7 +7,7 @@ import githubDark from '../../assets/github-dark.svg';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg';
 import { useTheme } from '../../common/ThemeContext';
-import { Link } from "react-router-dom";
+import NavLink from '../../common/NavLink';
 
 function NavBar() {
     const { theme, toggleTheme } = useTheme();
@@ -52,10 +52,12 @@ function NavBar() {
                         ✕
                     </span>
                 )}
-                <Link to="/" onClick={handleBurgerToggle} style={{ color: theme === 'light' ? 'black' : 'white' }}>Home</Link>
-                <Link to="/skills" onClick={handleBurgerToggle} style={{ color: theme === 'light' ? 'black' : 'white' }}>About</Link>
-                <Link to="/projects" onClick={handleBurgerToggle} style={{ color: theme === 'light' ? 'black' : 'white' }}>Project</Link>
-                <Link to="/contact" onClick={handleBurgerToggle} style={{ color: theme === 'light' ? 'black' : 'white' }}>Contact</Link>
+                 {/* Reusable NavLink components */}
+                <NavLink to="/" label="Home" onClick={handleBurgerToggle} />
+                <NavLink to="/skills" label="About" onClick={handleBurgerToggle} />
+                <NavLink to="/projects" label="Project" onClick={handleBurgerToggle} />
+                <NavLink to="/contact" label="Contact" onClick={handleBurgerToggle} />
+
                 <a href="https://linkedin.com/in/muazu-suzuki" target='_blank' onClick={handleBurgerToggle}>
                     <img src={linkedinIcon} alt="linkedin logo" />
                 </a>

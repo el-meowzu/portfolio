@@ -1,5 +1,4 @@
 import styles from './ProjectsStyles.module.css';
-import underConstruction from "../../assets/underConstruction.mp4"
 import oneLogo from "../../assets/one_logo.webp"
 import cssAnimation from "../../assets/css.webp"
 import weatherApp from "../../assets/weather_logo.webp"
@@ -30,12 +29,6 @@ function Projects() {
                 h3="Weather App"
                 p=" This App Uses Open Weather Map API "
                 
-            />
-            <ProjectCard 
-                src={underConstruction}
-                h3="Project Under Construction"
-                p="Working on a project using PERN stack"
-                isVideo={true}
             />
         </div>        
     </section>

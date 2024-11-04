@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ProjectCard({ src, link, h3, p, isVideo }) {
+const ProjectCard = ({ src, link, h3, p, isVideo }) => {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer">
       {isVideo ? (

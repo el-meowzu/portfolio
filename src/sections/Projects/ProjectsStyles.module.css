@@ -1,31 +1,39 @@
+/* Container */
 .container {
   display: flex;
   flex-direction: column;
   text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-in-out forwards;
 }
 
+/* Project Image */
 .container img {
   max-width: 250px;
   align-self: center;
   border-radius: 20px;
+  opacity: 0;
+  transform: scale(0.9);
+  animation: scaleIn 0.8s ease-out 0.5s forwards;
 }
 
-.container video {
-  max-width: 250px;
-  align-self: center; 
-  border-radius: 20px;
-}
+
 
 .container a {
   width: fit-content; 
   text-decoration: none;
   color: #222;
-  transition: transform 200ms ease-in-out;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  animation: fadeInUp 0.8s ease-in-out 0.6s forwards;
 }
 
 .container a:hover {
-  transform: scale(1.05);
+  transform: scale(1.05) translateY(-2px);
 }
+
 
 .projectsContainer {
   display: flex;
@@ -34,13 +42,39 @@
   gap: 30px;
 }
 
-/* Media Query */
+/* Keyframes for Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Media Query for Larger Screens */
 @media (min-width: 800px) {
   .projectsContainer {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      padding: 0 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 30px;
+  }
+
+  .container img {
+    max-width: 300px;
   }
 }

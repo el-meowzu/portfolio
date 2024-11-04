@@ -20,8 +20,6 @@
 
 body {
     background-color: var(--background-color);
-    /* display: flex;
-    justify-content: center;*/
     margin-top: 2rem; 
 
 }
@@ -30,7 +28,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 80px;
-    padding: 0 20px; /* Added padding for responsiveness */
+    padding: 0 20px; 
 }
 
 h1, h2, h3, p {

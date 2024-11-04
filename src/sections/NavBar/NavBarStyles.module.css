@@ -91,7 +91,7 @@
   display:none;
 }
 
-/* Mobile View */
+/* Responsive */
 @media (max-width: 768px) {
   .burgerIcon {
     display: block; 
@@ -142,6 +142,7 @@
 
   .showMenu {
     display: flex;
+    z-index: 1000;
   }
 
   .navContent a,

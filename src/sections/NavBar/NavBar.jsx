@@ -9,6 +9,7 @@ import moon from '../../assets/moon.svg';
 import { useTheme } from '../../common/ThemeContext';
 import NavLink from '../../common/NavLink';
 
+
 function NavBar() {
     const { theme, toggleTheme } = useTheme();
     const themeIcon = theme === 'light' ? sun : moon;
@@ -41,20 +42,19 @@ function NavBar() {
                 </div>
             )}
 
-            {/* Navigation Links */}
             <div className={`${styles.navContent} ${isBurgerOpen ? styles.showMenu : ''}`}>
                 {isBurgerOpen && (
                     <span 
                         onClick={handleBurgerToggle} 
-                        className={styles.closeIcon}
-                        
+                        className={styles.closeIcon}       
                     >
                         ✕
                     </span>
                 )}
-                 {/* Reusable NavLink components */}
+
+                {/* Reusable NavLink components */}
                 <NavLink to="/" label="Home" onClick={handleBurgerToggle} />
-                <NavLink to="/skills" label="About" onClick={handleBurgerToggle} />
+                <NavLink to="/skills" label="Skills" onClick={handleBurgerToggle} />
                 <NavLink to="/projects" label="Project" onClick={handleBurgerToggle} />
                 <NavLink to="/contact" label="Contact" onClick={handleBurgerToggle} />
 

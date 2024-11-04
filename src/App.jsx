@@ -1,7 +1,6 @@
-// App.js
 import './App.css';
 import NavBar from './sections/NavBar/NavBar';
-import Hero from './sections/Hero/Hero'; // Assuming Hero is your home section
+import Hero from './sections/Hero/Hero'; 
 import Projects from './sections/Projects/Projects';
 import Skills from './sections/Skills/Skills';
 import Contact from './sections/Contact/Contact';
